@@ -11,16 +11,15 @@
 4. Switch to `Compiler` on the left panel, using the settings below, then click on `Compile Yinbox.sol`
 
 <p align="center">
-    <img width="600px" src="https://raw.githubusercontent.com/jnlewis/public/main/yinbox/yinbox-architecture.jpg" alt="">
+    <img width="600px" src="https://raw.githubusercontent.com/jnlewis/yinbox-contracts/main/docs/images/tronode-compile-contract.png" alt="">
 </p>
 
 4. Switch to `Deploy` on the left panel, using the settings below, then click on `Deploy Yinbox.sol`.
 Important: The fee limit has to be increased to 4_000_000_000
 
 <p align="center">
-    <img width="600px" src="https://raw.githubusercontent.com/jnlewis/public/main/yinbox/yinbox-architecture.jpg" alt="">
+    <img width="600px" src="https://raw.githubusercontent.com/jnlewis/yinbox-contracts/main/docs/images/tronode-deploy-contract.png" alt="">
 </p>
-
 
 ### Deploy via TronBox
 
