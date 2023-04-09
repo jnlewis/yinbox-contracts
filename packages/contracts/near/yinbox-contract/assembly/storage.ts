@@ -1,3 +1,7 @@
+/*
+NOTE: This file is not in used and is here as reference for of future refactoring
+*/
+
 import { PersistentVector, storage, u128 } from "near-sdk-as";
 import { Conversation } from "./models";
 
@@ -8,13 +12,6 @@ export const get_contract_owner = (): string => {
 }
 export const set_contract_owner = (contract_owner: string): void => {
   storage.set("contract_owner", contract_owner);
-}
-
-export const get_fee = (): u128 => {
-  return storage.get<u128>("fee", u128.Zero) as u128;
-}
-export const set_fee = (fee: u128): void => {
-  storage.set("fee", fee);
 }
 
 export const generate_conversation_id = (): i32 => {
