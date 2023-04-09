@@ -1,0 +1,22 @@
+{
+  "name": "yinbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "asp",
+    "build": "asb",
+    "near-login": "near login",
+    "near-create-acc:testnet": "near create-account yinbox.jeffreylewis.testnet --masterAccount jeffreylewis.testnet --initialBalance 10",
+    "deploy:testnet": "yarn build && near deploy --accountId yinbox.jeffreylewis.testnet --wasmFile build/release/yinbox.wasm",
+    "deploy:dev": "yarn build && near dev-deploy --wasmFile build/release/yinbox.wasm"
+  },
+  "author": "Jeffrey Lewis",
+  "license": "ISC",
+  "devDependencies": {
+    "near-sdk-as": "^3.2.3"
+  },
+  "dependencies": {
+    "assemblyscript-json": "^1.1.0"
+  }
+}
