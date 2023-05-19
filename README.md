@@ -47,4 +47,4 @@ Refer to the individual Smart Contracts readme for further details on developmen
 
 ## Deployments
 
-Deployments to blockchain networks for testnet and mainnet are documented here `docs/DEPLOYMENT.md`.
+Deployments to blockchain networks for testnet and mainnet are documented here [docs/DEPLOYMENT.md](https://github.com/jnlewis/yinbox-contracts/blob/main/docs/DEPLOYMENTS.md).
