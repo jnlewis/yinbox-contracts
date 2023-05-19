@@ -51,6 +51,29 @@ contract Yinbox {
         return conversations[creator];
     }
 
+    function getConversationsFlat(address creator) public view returns (uint256[] memory, string[] memory, string[] memory) {
+        uint length = conversations[creator].length;
+
+        uint256[] memory resultConversationCodes = new uint256[](length);
+        string[] memory resultConversationTypes = new string[](length);
+        string[] memory resultConversationIds = new string[](length);
+        // address[] memory resultCreators = new address[](length);
+        // string[] memory resultStatuses = new string[](length);
+        // uint256[] memory resultCreatedDateTimes = new uint256[](length);
+
+        for (uint i = 0; i < length; i++) {
+            Conversation memory conversation = conversations[creator][i];
+            resultConversationCodes[i] = conversation.conversationCode;
+            resultConversationTypes[i] = conversation.conversationType;
+            resultConversationIds[i] = conversation.conversationId;
+            // resultCreators[i] = conversation.creator;
+            // resultStatuses[i] = conversation.status;
+            // resultCreatedDateTimes[i] = conversation.createdDateTime;
+        }
+
+        return (resultConversationCodes, resultConversationTypes, resultConversationIds);
+    }
+
     function setFee(string memory conversationType, uint256 fee) public ownerOnly {
         fees[conversationType] = fee;
     }
