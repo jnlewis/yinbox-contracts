@@ -44,3 +44,7 @@ Refer to the individual Smart Contracts readme for further details on developmen
 <p align="center">
     <img width="600px" src="https://raw.githubusercontent.com/jnlewis/public/main/yinbox/yinbox-screenshot-chat.jpg" alt="Yinbox Chat Screenshot">
 </p>
+
+## Deployments
+
+Deployments to blockchain networks for testnet and mainnet are documented here `docs/DEPLOYMENT.md`.
